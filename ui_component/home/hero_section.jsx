@@ -4,10 +4,15 @@ import React from "react";
 const HeroSection = () => {
   return (
     <>
-      <video autoPlay muted loop className="min-h-screen absolute top-0">
+      <video
+        autoPlay
+        muted
+        loop
+        className="min-h-screen min-w-[90vw] absolute top-0"
+      >
         <source src="/assets/home/hero.mp4" type="video/mp4" />
       </video>
-      <div className="min-h-screen w-full flex items-center justify-center z-10 backdrop-blur-xs flex-col gap-6 pb-56">
+      <div className="min-h-[600px] md:min-h-screen w-full flex items-center justify-center z-10 backdrop-blur-xs flex-col gap-6 ">
         <div>
           <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
             Unlock Real-time Blockchain <br /> Insights Across 60 <br />{" "}
