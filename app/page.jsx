@@ -9,6 +9,9 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section4 from "@/ui_component/home/section_4";
+import Section5 from "@/ui_component/home/section_5";
+import Section6 from "@/ui_component/home/section_6";
+import Section7 from "@/ui_component/home/section_7";
 
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 export default function MainHome() {
@@ -20,6 +23,9 @@ export default function MainHome() {
       <Section2 />
       <Section3 />
       <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
     </div>
   );
 }
