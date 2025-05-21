@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { TopBar } from "@/common_component/Topbar";
+import { Footer } from "@/common_component/Footer";
+import { ReactLenis, useLenis } from "lenis/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +25,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
+        <ReactLenis root />
+
         <TopBar>
           <div className="pt-10">{children}</div>
         </TopBar>
+        <Footer />
       </body>
     </html>
   );
