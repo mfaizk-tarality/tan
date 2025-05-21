@@ -1,18 +1,13 @@
 import dynamic from "next/dynamic";
 import Container from "@/common_component/container";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 const Player = dynamic(
   () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
   { ssr: false }
 );
 
-const Controls = dynamic(
-  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Controls),
-  { ssr: false }
-);
-
 import { useRef } from "react";
+import { ScrollTrigger } from "gsap/all";
 
 const Section4 = () => {
   const containerRef = useRef();
@@ -21,26 +16,15 @@ const Section4 = () => {
   const lottie2Ref = useRef();
 
   useGSAP(() => {
-    gsap.to(lottie1Ref.current, {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center",
-        onEnter: () => {
-          lottie1Ref.current?.play();
-        },
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top center",
+      onEnter: () => {
+        lottie1Ref.current?.play();
+        lottie2Ref.current?.play();
       },
     });
-
-    gsap.to(lottie2Ref.current, {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top center",
-        onEnter: () => {
-          lottie2Ref.current?.play();
-        },
-      },
-    });
-  });
+  }, []);
 
   return (
     <Container>
@@ -73,7 +57,7 @@ const Section4 = () => {
           </div>
           <div className="col-span-12 md:col-span-7  border border-white/20 overflow-hidden flex items-end justify-end rounded-xl relative h-[384px]">
             <Player
-              ref={lottie1Ref}
+              lottieRef={(data) => (lottie1Ref.current = data)}
               src={require("../../assets/animate/sect4-ani1.json")}
               keepLastFrame={true}
               speed={4}
@@ -100,7 +84,7 @@ const Section4 = () => {
 
           <div className="col-span-12 md:col-span-7  border border-white/20 overflow-hidden flex items-end justify-end rounded-xl relative h-[384px]">
             <Player
-              ref={lottie1Ref}
+              lottieRef={(data) => (lottie2Ref.current = data)}
               src={require("../../assets/animate/sect4-ani2.json")}
               keepLastFrame={true}
               speed={4}
