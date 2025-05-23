@@ -38,6 +38,8 @@ const Section4 = () => {
         <div className="grid grid-cols-12 w-full md:gap-10 gap-4 mt-20 ">
           <div className="col-span-12 md:col-span-5 relative border border-white/20 overflow-hidden flex items-end p-8 rounded-xl h-[384px] ">
             <video
+              playsInline
+              preload="auto"
               autoPlay
               muted
               loop
@@ -111,6 +113,8 @@ const Section4 = () => {
           </div>
           <div className="col-span-12 md:col-span-5 relative border border-white/20 overflow-hidden flex items-end p-8 rounded-xl h-[384px] ">
             <video
+              playsInline
+              preload="auto"
               autoPlay
               muted
               loop

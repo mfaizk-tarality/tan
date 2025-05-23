@@ -5,6 +5,8 @@ const HeroSection = () => {
   return (
     <>
       <video
+        playsInline
+        preload="auto"
         autoPlay
         muted
         loop

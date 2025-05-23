@@ -6,7 +6,6 @@ import Section2 from "@/ui_component/home/section_2";
 import Section3 from "@/ui_component/home/section_3";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Section4 from "@/ui_component/home/section_4";
 import Section5 from "@/ui_component/home/section_5";
@@ -17,7 +16,7 @@ import Section9 from "@/ui_component/home/section_9";
 import Section10 from "@/ui_component/home/section_10";
 import Section11 from "@/ui_component/home/section_11";
 
-gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 export default function MainHome() {
   return (
     <div className="relative container mx-auto flex items-center justify-center flex-col">

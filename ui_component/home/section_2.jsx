@@ -37,7 +37,15 @@ const Section2 = () => {
         ref={containerRef}
       >
         <div className="col-span-6 md:col-span-3 flex justify-start items-start order-2 md:order-1">
-          <video autoPlay muted loop className="h-[500px]" ref={videoBox}>
+          <video
+            playsInline
+            preload="auto"
+            autoPlay
+            muted
+            loop
+            className="h-[500px]"
+            ref={videoBox}
+          >
             <source src="/assets/home/sect2.mp4" type="video/mp4" />
           </video>
         </div>

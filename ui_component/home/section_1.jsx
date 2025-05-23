@@ -78,6 +78,8 @@ const Section1 = () => {
         </div>
         <div className="col-span-6 md:col-span-3 justify-center items-center ">
           <video
+            playsInline
+            preload="auto"
             autoPlay
             muted
             loop
