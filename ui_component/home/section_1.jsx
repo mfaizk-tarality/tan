@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 const Section1 = () => {
@@ -63,7 +64,11 @@ const Section1 = () => {
               Transactions confirmed in seconds. Fees that stay low. Through
               bull and bear.
             </p>
-            <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32">
+            <Link
+              scroll
+              href={"/section/fast"}
+              className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32"
+            >
               <div className="relative overflow-hidden flex items-center justify-center">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
                   Learn More
@@ -72,7 +77,7 @@ const Section1 = () => {
                   Learn More
                 </p>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-6 md:col-span-3 justify-center items-center ">

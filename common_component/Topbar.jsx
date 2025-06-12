@@ -39,7 +39,9 @@ export function TopBar({ children }) {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Super Seed Sale</NavbarButton>
+            <NavbarButton variant="primary" href={"https://buy.tan.live/"}>
+              Super Seed Sale
+            </NavbarButton>
           </div>
         </NavBody>
 
@@ -72,6 +74,7 @@ export function TopBar({ children }) {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                href={"https://buy.tan.live/"}
               >
                 Super Seed Sale
               </NavbarButton>

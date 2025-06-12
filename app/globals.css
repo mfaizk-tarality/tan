@@ -44,20 +44,30 @@
   --color-regal-purple: #cf1c7b;
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  /* customColor-start */
+  --color-tancolor: rgb(207, 28, 123);
+  --color-background: rgb(45, 46, 51);
+  --color-subbg: rgb(46, 48, 52);
+  --color-title: rgb(255, 255, 255);
+  --color-description: rgb(154, 161, 173);
+  --color-card: rgb(45, 46, 51);
+  --color-stroke: rgb(62, 64, 71);
+  --color-tanborder: rgb(207, 28, 123);
+  /* customColor-end */
   @keyframes marquee {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }
   @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
+    from {
+      transform: translateY(0);
     }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
     }
   }
 }

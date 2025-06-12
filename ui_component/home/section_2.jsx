@@ -3,6 +3,7 @@ import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 const Section2 = () => {
@@ -74,7 +75,11 @@ const Section2 = () => {
             >
               TAN’s architecture grows with your app, not against it.
             </p>
-            <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32">
+            <Link
+              className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32"
+              scroll
+              href={"/section/built"}
+            >
               <div className="relative overflow-hidden flex items-center justify-center">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
                   Learn More
@@ -83,7 +88,7 @@ const Section2 = () => {
                   Learn More
                 </p>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
