@@ -33,7 +33,7 @@ const Section4 = () => {
         ref={containerRef}
       >
         <h2 className="text-white text-5xl font-semibold md:w-[50%] text-center">
-          Unlocking Real-Time Blockchain Insights Effortlessly
+          Power, without the price.
         </h2>
         <div className="grid grid-cols-12 w-full md:gap-10 gap-4 mt-20 ">
           <div className="col-span-12 md:col-span-5 relative border border-white/20 overflow-hidden flex items-end p-8 rounded-xl h-[384px] ">
@@ -50,10 +50,11 @@ const Section4 = () => {
             </video>
             <div className="relative z-10">
               <p className="text-white text-xl font-medium">
-                Simple and Efficient
+                Fixed, Predictable Supply{" "}
               </p>
               <p className="text-white/50">
-                We utilize advanced algorithms to gather data seamlessly.
+                TAN’s supply is capped at 30 billion token, ensuring that no
+                inflationary pressures can ever devalue the token over time.
               </p>
             </div>
           </div>
@@ -75,10 +76,11 @@ const Section4 = () => {
             >
               <div className="relative z-10">
                 <p className="text-white text-xl font-medium">
-                  Simple and Efficient
+                  Block-Per-Reward Consensus{" "}
                 </p>
                 <p className="text-white/50">
-                  We utilize advanced algorithms to gather data seamlessly.
+                  Validators earn rewards based on the blocks they propose,
+                  rather than the stake they hold.
                 </p>
               </div>
             </div>
@@ -102,11 +104,11 @@ const Section4 = () => {
             >
               <div className="relative z-10">
                 <p className="text-white text-xl font-medium">
-                  User-Friendly Dashboards
+                  Inflation Protection Model
                 </p>
                 <p className="text-white/50">
-                  Visualize your data with intuitive dashboards that simplify
-                  analysis.
+                  Burn mechanisms reduce supply, control inflation, and drive
+                  sustainable value.
                 </p>
               </div>
             </div>
@@ -124,9 +126,12 @@ const Section4 = () => {
               <source src="/assets/home/sec4-2.mp4" type="video/mp4" />
             </video>
             <div className="relative z-10">
-              <p className="text-white text-xl font-medium">Instant Insights</p>
+              <p className="text-white text-xl font-medium">
+                Real Yield, Not Just Inflationary Rewards
+              </p>
               <p className="text-white/50">
-                Get news and tips from all networks in one place.
+                Rewards are sustainable, earned through actual network activity
+                and gas fees burning, not endless token minting.{" "}
               </p>
             </div>
           </div>

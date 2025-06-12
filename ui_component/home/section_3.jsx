@@ -40,25 +40,23 @@ const Section3 = () => {
             )}
           />
           <div className="flex flex-col gap-4 items-center md:items-start relative z-10">
-            <h6
+            {/* <h6
               className={`text-regal-purple font-medium text-xl`}
               ref={heading}
             >
               Accuracy
-            </h6>
+            </h6> */}
             <h4
               className="text-white text-5xl font-bold text-center md:text-start"
               ref={title}
             >
-              Unlock Insights with Enriched Blockchain Data
+              Sustainable by design.
             </h4>
             <p
               className="text-white/80 w-full md:w-[80%] text-center md:text-start"
               ref={subTitle}
             >
-              Our enriched data transforms blockchain information into
-              actionable insights, improving understanding of market trends and
-              user behaviors.
+              TAN’s Inflation Protection Model keeps the ecosystem in balance.
             </p>
             <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32">
               <div className="relative overflow-hidden flex items-center justify-center">

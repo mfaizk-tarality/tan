@@ -1,45 +1,48 @@
 import Container from "@/common_component/container";
 import { useGSAP } from "@gsap/react";
+import {
+  IconAssembly,
+  IconBrandCohost,
+  IconBrandFeedly,
+  IconDeviceTabletCode,
+  IconHierarchy,
+  IconTimeDuration0,
+} from "@tabler/icons-react";
 import gsap from "gsap";
 import React, { useRef } from "react";
 import { FaBeer } from "react-icons/fa";
 
 const cardData = [
   {
-    title: "Real-Time Insights",
-    subtitle:
-      "Access blockchain data in real-time to make timely and informed decisions.",
-    Icon: FaBeer,
+    title: "EVM compatible",
+    subtitle: "Your code works here. No extra hoops, no headaches.",
+    Icon: IconAssembly,
   },
   {
-    title: "Data Integrity",
+    title: "Dev-first tooling",
     subtitle:
-      "Trust in validated and consistent data for all your blockchain needs.",
-    Icon: FaBeer,
+      "From docs to dashboards, everything’s built for clarity and speed.",
+    Icon: IconDeviceTabletCode,
   },
   {
-    title: "Developer-Friendly",
-    subtitle:
-      "Enjoy robust APIs and tools for seamless integration and customization.",
-    Icon: FaBeer,
+    title: "Community-led",
+    subtitle: "Shaped by its builders, validators, and users.",
+    Icon: IconBrandCohost,
   },
   {
-    title: "Cross-Network Coverage",
-    subtitle:
-      "Support for 60+ networks ensures comprehensive blockchain analytics.",
-    Icon: FaBeer,
+    title: "BPoS Consensus",
+    subtitle: "Our Block Per Reward model aligns incentives with uptime.",
+    Icon: IconBrandFeedly,
   },
   {
-    title: "Scalable Solutions",
-    subtitle:
-      "Seamlessly scale with our adaptable infrastructure for growing demands.",
-    Icon: FaBeer,
+    title: "Trust, by default",
+    subtitle: "Secure, audited, and made for peace of mind.",
+    Icon: IconTimeDuration0,
   },
   {
-    title: "Enhanced Security",
-    subtitle:
-      "Protect sensitive blockchain data with top-tier encryption and protocols.",
-    Icon: FaBeer,
+    title: "Nothing to hide",
+    subtitle: "Transparent tokenomics. Public governance. Always accountable.",
+    Icon: IconHierarchy,
   },
 ];
 
@@ -65,7 +68,7 @@ const Section6 = () => {
         ref={containerRef}
       >
         <h2 className="text-3xl md:text-5xl font-semibold text-white text-center md:w-[50%]">
-          Effortlessly Accessing Real-Time Insights from Blockchain
+          Built Different. Built for Builders.
         </h2>
       </div>
       <div className="grid grid-cols-12 w-full gap-4 mt-20">

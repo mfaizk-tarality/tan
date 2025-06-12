@@ -56,25 +56,23 @@ const Section2 = () => {
             )}
           />
           <div className="flex flex-col gap-4 items-center md:items-start relative z-10">
-            <h6
+            {/* <h6
               className={`text-regal-purple font-medium text-xl`}
               ref={heading}
             >
               Instant
-            </h6>
+            </h6> */}
             <h4
               className="text-white text-5xl font-bold text-center md:text-start"
               ref={title}
             >
-              Stay Ahead with Real-Time Blockchain Insights
+              Built to scale.
             </h4>
             <p
               className="text-white/80 w-full md:w-[80%] text-center md:text-start"
               ref={subTitle}
             >
-              Accessing real-time data empowers you to make informed decisions
-              swiftly. Our platform ensures you never miss critical updates in
-              the blockchain landscape.
+              TAN’s architecture grows with your app, not against it.
             </p>
             <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32">
               <div className="relative overflow-hidden flex items-center justify-center">

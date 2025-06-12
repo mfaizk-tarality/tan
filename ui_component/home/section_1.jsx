@@ -44,33 +44,32 @@ const Section1 = () => {
             )}
           />
           <div className="flex flex-col gap-4 items-center md:items-start relative z-10">
-            <h6
+            {/* <h6
               className={`text-regal-purple font-medium text-xl`}
               ref={heading}
             >
               Connect
-            </h6>
+            </h6> */}
             <h4
               className="text-white text-5xl font-bold text-center md:text-start split"
               ref={title}
             >
-              Seamless Access to Blockchain Data
+              Fast, low-cost, and final.
             </h4>
             <p
               className="text-white/80 w-full md:w-[80%] text-center md:text-start split"
               ref={subTitle}
             >
-              Experience unparalleled access to over 60 blockchain networks. Our
-              platform provides real-time, enriched data to empower your
-              decisions.
+              Transactions confirmed in seconds. Fees that stay low. Through
+              bull and bear.
             </p>
             <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd] w-32">
               <div className="relative overflow-hidden flex items-center justify-center">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
-                  Get Started
+                  Learn More
                 </p>
                 <p className="absolute top-7 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
-                  Get Started
+                  Learn More
                 </p>
               </div>
             </button>

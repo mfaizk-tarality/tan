@@ -16,6 +16,7 @@ import Section9 from "@/ui_component/home/section_9";
 import Section10 from "@/ui_component/home/section_10";
 import Section11 from "@/ui_component/home/section_11";
 import Section81 from "@/ui_component/home/section_8.1";
+import OverViewSection from "@/ui_component/home/overview_section";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 export default function MainHome() {
@@ -29,7 +30,8 @@ export default function MainHome() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Section7 />
+      <OverViewSection />
+      {/* <Section7 /> */}
       <Section8 />
       <Section81 />
       <Section9 />

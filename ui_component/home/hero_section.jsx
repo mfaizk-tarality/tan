@@ -17,12 +17,12 @@ const HeroSection = () => {
       <div className="min-h-[600px] md:min-h-screen w-full flex items-center justify-center z-10 backdrop-blur-xs flex-col gap-6 ">
         <div>
           <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
-            Unlock Real-time Blockchain <br /> Insights Across 60 <br />{" "}
-            Networks
+            The Anti-Inflation Chain
           </h1>
           <p className="text-white text-center font-normal text-sm md:text-lg">
-            Our platform delivers real-time insights from over 60 networks,
-            empowering your <br /> decisions with unparalleled accuracy.
+            TAN is a Layer-1 blockchain designed for builders and believers.
+            Built for scale and scarcity, with <br /> Inflation Protection at
+            the protocol level, TAN is where powerful ideas go live.
           </p>
         </div>
 
@@ -30,10 +30,10 @@ const HeroSection = () => {
           <button className="cursor-pointer px-4 py-2 rounded-md border-[1px] text-black font-medium group bg-[#e0dedd]">
             <div className="relative overflow-hidden">
               <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
-                Get Started
+                Start Building
               </p>
               <p className="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] text-sm font-medium">
-                Get Started
+                Start Building
               </p>
             </div>
           </button>
@@ -52,7 +52,7 @@ const HeroSection = () => {
           <div className="flex flex-row items-center justify-center md:mb-10">
             <AnimatedTooltip items={people} />
           </div>
-          <p className="text-white/80 mt-2">Trusted already by 1.2k+</p>
+          <p className="text-white/80 mt-2">Trusted and backed by teams at</p>
         </div>
       </div>
     </>
